@@ -465,6 +465,247 @@ const createDna = (_layers) => {
             }
           }
 
+          //Clothes: Chain-all (No Hands) (0.2%)
+          if (layer.name === "Clothes") {
+            if (name === "Chained grey" || name === "Chained blue") {
+              if (layerMap.get("Hands")) {
+                done = false;
+                console.log(
+                  "\u001b[1;41m >> ✅ Rules : Clothes Chained-all = Hands -> rerun! ↻  " +
+                    "\u001b[0m"
+                );
+              }
+            }
+          }
+
+          //Clothes: Cult_robe-all, Hazmat-all( No Hair Bucket hat-all, No Hair Beret-all)
+          if (layer.name === "Hair") {
+            if (
+              name === "buckethat brown" ||
+              name === "buckethat green" ||
+              name === "buckethat black 1" ||
+              name === "beret black" ||
+              name === "beret brown" ||
+              name === "beret red"
+            ) {
+              if (layerMap.get("Clothes").name === "Cult Robe blue") {
+                done = false;
+                console.log(
+                  "\u001b[1;41m >> ✅ Rules : Clothes Cult Robe-all =  Hair buckethat-all / beret-all -> rerun! ↻  " +
+                    "\u001b[0m"
+                );
+              } else if (
+                layerMap.get("Clothes").name ===
+                "Cult Robe blue White Tshirt ukuri"
+              ) {
+                console.log(
+                  "\u001b[1;41m >> ✅ Rules : Clothes Cult Robe-all = Hair buckethat-all / beret-all -> rerun! ↻  " +
+                    "\u001b[0m"
+                );
+              } else if (
+                layerMap.get("Clothes").name ===
+                "Cult Robe black White Tshirt Chains"
+              ) {
+                console.log(
+                  "\u001b[1;41m >> ✅ Rules : Clothes Cult Robe-all = Hair buckethat-all / beret-all -> rerun! ↻  " +
+                    "\u001b[0m"
+                );
+              } else if (
+                layerMap.get("Clothes").name === "Cult Robe blue Grey Tshirt"
+              ) {
+                console.log(
+                  "\u001b[1;41m >> ✅ Rules : Clothes Cult Robe-all = Hair buckethat-all / beret-all -> rerun! ↻  " +
+                    "\u001b[0m"
+                );
+              } else if (
+                layerMap.get("Clothes").name ===
+                "Cult Robe Purple Yellow Tshirt"
+              ) {
+                console.log(
+                  "\u001b[1;41m >> ✅ Rules : Clothes Cult Robe-all = Hair buckethat-all / beret-all -> rerun! ↻  " +
+                    "\u001b[0m"
+                );
+              } else if (layerMap.get("Clothes").name === "Cult Robe Purple") {
+                console.log(
+                  "\u001b[1;41m >> ✅ Rules : Clothes Cult Robe-all = Hair buckethat-all / beret-all -> rerun! ↻  " +
+                    "\u001b[0m"
+                );
+              } else if (
+                layerMap.get("Clothes").name === "Cult Robe Purple White Tshirt"
+              ) {
+                console.log(
+                  "\u001b[1;41m >> ✅ Rules : Clothes Cult Robe-all = Hair buckethat-all / beret-all -> rerun! ↻  " +
+                    "\u001b[0m"
+                );
+              } else if (
+                layerMap.get("Clothes").name === "Cult Robe Purple Tanktop"
+              ) {
+                console.log(
+                  "\u001b[1;41m >> ✅ Rules : Clothes Cult Robe-all = Hair buckethat-all / beret-all -> rerun! ↻  " +
+                    "\u001b[0m"
+                );
+              } else if (
+                layerMap.get("Clothes").name === "Cult Robe Purple Pink Tshirt"
+              ) {
+                console.log(
+                  "\u001b[1;41m >> ✅ Rules : Clothes Cult Robe-all = Hair buckethat-all / beret-all -> rerun! ↻  " +
+                    "\u001b[0m"
+                );
+              } else if (layerMap.get("Clothes").name === "Cult Robe Pink") {
+                console.log(
+                  "\u001b[1;41m >> ✅ Rules : Clothes Cult Robe-all = Hair buckethat-all / beret-all -> rerun! ↻  " +
+                    "\u001b[0m"
+                );
+              } else if (
+                layerMap.get("Clothes").name === "Cult Robe Purple Beige Tshirt"
+              ) {
+                console.log(
+                  "\u001b[1;41m >> ✅ Rules : Clothes Cult Robe-all = Hair buckethat-all / beret-all -> rerun! ↻  " +
+                    "\u001b[0m"
+                );
+              } else if (
+                layerMap.get("Clothes").name === "Cult Robe Pink Yellow Tshirt"
+              ) {
+                console.log(
+                  "\u001b[1;41m >> ✅ Rules : Clothes Cult Robe-all = Hair buckethat-all / beret-all -> rerun! ↻  " +
+                    "\u001b[0m"
+                );
+              } else if (
+                layerMap.get("Clothes").name === "Cult Robe Pink White Tshirt"
+              ) {
+                console.log(
+                  "\u001b[1;41m >> ✅ Rules : Clothes Cult Robe-all = Hair buckethat-all / beret-all -> rerun! ↻  " +
+                    "\u001b[0m"
+                );
+              } else if (
+                layerMap.get("Clothes").name === "Cult Robe Pink Pink Tshirt"
+              ) {
+                console.log(
+                  "\u001b[1;41m >> ✅ Rules : Clothes Cult Robe-all = Hair buckethat-all / beret-all -> rerun! ↻  " +
+                    "\u001b[0m"
+                );
+              } else if (
+                layerMap.get("Clothes").name === "Cult Robe Pink Tanktop"
+              ) {
+                console.log(
+                  "\u001b[1;41m >> ✅ Rules : Clothes Cult Robe-all = Hair buckethat-all / beret-all -> rerun! ↻  " +
+                    "\u001b[0m"
+                );
+              } else if (
+                layerMap.get("Clothes").name === "Cult Robe Pink Grey Tshirt"
+              ) {
+                console.log(
+                  "\u001b[1;41m >> ✅ Rules : Clothes Cult Robe-all = Hair buckethat-all / beret-all -> rerun! ↻  " +
+                    "\u001b[0m"
+                );
+              } else if (
+                layerMap.get("Clothes").name === "Cult Robe Pink Chains"
+              ) {
+                console.log(
+                  "\u001b[1;41m >> ✅ Rules : Clothes Cult Robe-all = Hair buckethat-all / beret-all -> rerun! ↻  " +
+                    "\u001b[0m"
+                );
+              } else if (
+                layerMap.get("Clothes").name === "Cult Robe Pink Beige Tshirt"
+              ) {
+                console.log(
+                  "\u001b[1;41m >> ✅ Rules : Clothes Cult Robe-all = Hair buckethat-all / beret-all -> rerun! ↻  " +
+                    "\u001b[0m"
+                );
+              } else if (
+                layerMap.get("Clothes").name === "Cult Robe Green White Tshirt"
+              ) {
+                console.log(
+                  "\u001b[1;41m >> ✅ Rules : Clothes Cult Robe-all = Hair buckethat-all / beret-all -> rerun! ↻  " +
+                    "\u001b[0m"
+                );
+              } else if (layerMap.get("Clothes").name === "Cult Robe Green") {
+                console.log(
+                  "\u001b[1;41m >> ✅ Rules : Clothes Cult Robe-all = Hair buckethat-all / beret-all -> rerun! ↻  " +
+                    "\u001b[0m"
+                );
+              } else if (
+                layerMap.get("Clothes").name === "Cult Robe Black Yellow Tshirt"
+              ) {
+                console.log(
+                  "\u001b[1;41m >> ✅ Rules : Clothes Cult Robe-all = Hair buckethat-all / beret-all -> rerun! ↻  " +
+                    "\u001b[0m"
+                );
+              } else if (layerMap.get("Clothes").name === "Cult Robe Black") {
+                console.log(
+                  "\u001b[1;41m >> ✅ Rules : Clothes Cult Robe-all = Hair buckethat-all / beret-all -> rerun! ↻  " +
+                    "\u001b[0m"
+                );
+              } else if (
+                layerMap.get("Clothes").name === "Cult Robe Black White Tshirt"
+              ) {
+                console.log(
+                  "\u001b[1;41m >> ✅ Rules : Clothes Cult Robe-all = Hair buckethat-all / beret-all -> rerun! ↻  " +
+                    "\u001b[0m"
+                );
+              } else if (
+                layerMap.get("Clothes").name === "Cult Robe Black Tanktop"
+              ) {
+                console.log(
+                  "\u001b[1;41m >> ✅ Rules : Clothes Cult Robe-all = Hair buckethat-all / beret-all -> rerun! ↻  " +
+                    "\u001b[0m"
+                );
+              } else if (
+                layerMap.get("Clothes").name === "Cult Robe Black Grey Tshirt"
+              ) {
+                console.log(
+                  "\u001b[1;41m >> ✅ Rules : Clothes Cult Robe-all = Hair buckethat-all / beret-all -> rerun! ↻  " +
+                    "\u001b[0m"
+                );
+              } else if (
+                layerMap.get("Clothes").name === "Cult Robe Black Pink Tshirt"
+              ) {
+                console.log(
+                  "\u001b[1;41m >> ✅ Rules : Clothes Cult Robe-all = Hair buckethat-all / beret-all -> rerun! ↻  " +
+                    "\u001b[0m"
+                );
+              } else if (
+                layerMap.get("Clothes").name === "Cult Robe Black Green Tshirt"
+              ) {
+                console.log(
+                  "\u001b[1;41m >> ✅ Rules : Clothes Cult Robe-all = Hair buckethat-all / beret-all -> rerun! ↻  " +
+                    "\u001b[0m"
+                );
+              } else if (
+                layerMap.get("Clothes").name === "Cult Robe Black Beige Tshirt"
+              ) {
+                console.log(
+                  "\u001b[1;41m >> ✅ Rules : Clothes Cult Robe-all = Hair buckethat-all / beret-all -> rerun! ↻  " +
+                    "\u001b[0m"
+                );
+              } else if (
+                layerMap.get("Clothes").name === "Cult Robe Black Black Tshirt"
+              ) {
+                console.log(
+                  "\u001b[1;41m >> ✅ Rules : Clothes Cult Robe-all = Hair buckethat-all / beret-all -> rerun! ↻  " +
+                    "\u001b[0m"
+                );
+              } else if (layerMap.get("Clothes").name === "Hazmat yellow") {
+                console.log(
+                  "\u001b[1;41m >> ✅ Rules : Clothe Hazmat-all = Hair buckethat-all / beret-all -> rerun! ↻  " +
+                    "\u001b[0m"
+                );
+              } else if (layerMap.get("Clothes").name === "Hazmat white") {
+                console.log(
+                  "\u001b[1;41m >> ✅ Rules : Clothe Hazmat-all = Hair buckethat-all / beret-all -> rerun! ↻  " +
+                    "\u001b[0m"
+                );
+              } else if (layerMap.get("Clothes").name === "Hazmat black") {
+                console.log(
+                  "\u001b[1;41m >> ✅ Rules : Clothe Hazmat-all = Hair buckethat-all / beret-all -> rerun! ↻  " +
+                    "\u001b[0m"
+                );
+              }
+            }
+          }
+
+          //Clothes: Carge Vest_Tattoo-all, Bulletproof_tattoo-all(No Body Tattoo)
+
           //- Eyes: Robo_Head-all (No Tribal-all Face Tattoos, No Mouth Vampire-all, Laugh, Joker_paint)
           if (layer.name === "Eyes") {
             if (
@@ -474,46 +715,11 @@ const createDna = (_layers) => {
               name === "Robo Head Gothic"
             ) {
               //Face Tattoo : Triball All
-              if (layerMap.get("Face Tattoo").name === "Tribal One") {
+              if (layerMap.get("Face Tattoo")) {
                 done = false;
                 console.log(
-                  "Eyes Robo Head All = Face Tattoo Tribal One -> rerun!"
-                );
-              } else if (layerMap.get("Face Tattoo").name === "Tribal shock") {
-                done = false;
-                console.log(
-                  "Eyes Robo Head All = Face Tattoo Tribal shock -> rerun!"
-                );
-              } else if (layerMap.get("Face Tattoo").name === "Tribal Xs") {
-                done = false;
-                console.log(
-                  "Eyes Robo Head All = Face Tattoo Tribal Xs -> rerun!"
-                );
-              } else if (
-                layerMap.get("Face Tattoo").name === "Tribal Tyson Drop"
-              ) {
-                done = false;
-                console.log(
-                  "Eyes Robo Head All = Face Tattoo Tribal Tyson Drop -> rerun!"
-                );
-              } else if (
-                layerMap.get("Face Tattoo").name === "Tribal shock Flower"
-              ) {
-                done = false;
-                console.log(
-                  "Eyes Robo Head All = Face Tattoo Tribal shock Flower -> rerun!"
-                );
-              } else if (
-                layerMap.get("Face Tattoo").name === "Tribal shock Red heart"
-              ) {
-                done = false;
-                console.log(
-                  "Eyes Robo Head All = Face Tattoo Tribal shock Red heart -> rerun!"
-                );
-              } else if (layerMap.get("Face Tattoo").name === "Tribal Tyso") {
-                done = false;
-                console.log(
-                  "Eyes Robo Head All = Face Tattoo Tribal Tyso -> rerun!"
+                  "\u001b[1;41m >> ✅ Rules : Eyes Robo Head-all = Face Tattoo -> rerun! ↻  " +
+                    "\u001b[0m"
                 );
               }
             }
